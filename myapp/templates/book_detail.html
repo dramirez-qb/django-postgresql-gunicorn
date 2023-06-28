@@ -1,0 +1,17 @@
+<!-- myapp/templates/book_detail.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Detail</title>
+</head>
+<body>
+    <h1>{{ book.title }}</h1>
+    <p>Author: {{ book.author }}</p>
+    <a href="{% url 'book_update' book.pk %}">Edit</a>
+    <form action="{% url 'book_delete' book.pk %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Delete">
+    </form>
+</body>
+</html>
