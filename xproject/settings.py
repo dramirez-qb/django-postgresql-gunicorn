@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'xproject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+# BEGIN ANSIBLE MANAGED BLOCK
 DATABASES = {
     # 'default': {
     #     'ENGINE': 'django.db.backends.sqlite3',
@@ -90,7 +90,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
+# END ANSIBLE MANAGED BLOCK
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
