@@ -26,7 +26,7 @@ SECRET_KEY = 'dasdsasd122-123123sdas2#@-rtl%1_8fwg4$=51-n&z!2s6q864f5iw#jdcp_rd6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['your_domain.com', '0.0.0.0'] + os.getenv("EXTRA_HOSTS", "").split(",")
+ALLOWED_HOSTS = ['your_domain.com', '0.0.0.0', '127.0.0.1'] + os.getenv("EXTRA_HOSTS", "").split(",")
 
 
 # Application definition
